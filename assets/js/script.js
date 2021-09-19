@@ -30,11 +30,11 @@ var taskFormHandler = function (event) {
     };
   
     createTaskEl(taskDataObj);
+    formEl.reset();
 } 
 
     // send it as an argument to createTaskEl
-    createTaskEl(taskDataObj);
-    formEl.reset();
+    //createTaskEl(taskDataObj);   
 };
 
 var createTaskEl = function(taskDataObj) {
