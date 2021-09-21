@@ -205,6 +205,7 @@ var taskStatusChangeHandler = function(event) {
         if (tasks[i].id === parseInt(taskId)) {
         tasks[i].status = statusValue;
         }
+        tasks = JSON.parse(tasks);
     } 
 
     localStorage.setItem("tasks", tasks);
