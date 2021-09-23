@@ -35,6 +35,8 @@ var taskFormHandler = function (event) {
     formEl.reset();
     tasks.push(taskDataObj);
     localStorage.setItem("tasks", tasks);
+
+    taskIdCounter++;
     }
    
 };
@@ -60,7 +62,7 @@ var createTaskEl = function(taskDataObj) {
 
     taskDataObj.id = taskIdCounter;
     
-    taskIdCounter++;
+   
 
 };
 
